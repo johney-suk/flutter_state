@@ -15,7 +15,7 @@ class DiceApp extends StatelessWidget {
         backgroundColor: Colors.red,
         appBar: AppBar(
           backgroundColor: Colors.red,
-          title: Text('주사위 굴리기'),
+          title: Text('주사위  굴리기'),
         ),
         body: DiceScreen(),
       ),
