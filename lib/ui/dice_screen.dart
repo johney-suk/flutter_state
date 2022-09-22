@@ -4,7 +4,7 @@ class DiceScreen extends StatelessWidget {
   const DiceScreen({Key? key}) : super(key: key);
 
   void _rollDice(BuildContext context) {
-    final snackBar = SnackBar(content: Text('주사위 클릭..'));
+    final snackBar = SnackBar(content: Text('주사위 클릭...'));
     ScaffoldMessenger.of(context).showSnackBar(snackBar);
   }
 
