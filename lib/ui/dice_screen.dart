@@ -3,9 +3,11 @@ import 'package:flutter/material.dart';
 class DiceScreen extends StatelessWidget {
   const DiceScreen({Key? key}) : super(key: key);
 
+  // 주사위 숫자 2개를 랜덤하게 생성
   void _rollDice(BuildContext context) {
-    final snackBar = SnackBar(content: Text('주사위 클릭...'));
-    ScaffoldMessenger.of(context).showSnackBar(snackBar);
+    // final snackBar = SnackBar(content: Text('주사위 클릭...'));
+    // ScaffoldMessenger.of(context).showSnackBar(snackBar);
+    
   }
 
   @override
@@ -20,9 +22,9 @@ class DiceScreen extends StatelessWidget {
              ),
         ),
         Expanded(
-            child: GestureDetector(
+            child: TextButton(
                 child: Image.asset('images/dice5.png'),
-              onTap: (){ _rollDice(context); },
+              onPressed: (){ _rollDice(context); },
             ),
         ),
       ]),
